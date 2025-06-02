@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h2 class="mb-4">Edit Contact</h2>
+
+<form action="{{ url_for('update_contact', id=contact[0]) }}" method="POST">
+  <div class="mb-3">
+    <label for="fullname" class="form-label">Fullname</label>
+    <input
+      type="text"
+      class="form-control"
+      id="fullname"
+      name="fullname"
+      value="{{ contact[1] }}"
+      required
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="phone" class="form-label">Phone</label>
+    <input
+      type="text"
+      class="form-control"
+      id="phone"
+      name="phone"
+      value="{{ contact[2] }}"
+      required
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      value="{{ contact[3] }}"
+      required
+    />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Update</button>
+  <a href="{{ url_for('Index') }}" class="btn btn-secondary ms-2">Cancel</a>
+</form>
+
+{% endblock %}
