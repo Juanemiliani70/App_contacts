@@ -15,6 +15,15 @@ A simple Flask web application to manage contacts with MySQL as database.
 
 ---
 
+##Screenshots:
+
+![Imagen 1](imagenes/imagen1.jpeg)
+![Imagen 2](imagenes/imagen2.jpeg)
+![Imagen 3](imagenes/imagen3.jpeg)
+![Imagen 4](imagenes/imagen4.jpeg)
+
+---
+
 ## Installation & Setup
 
 ### Requirements
